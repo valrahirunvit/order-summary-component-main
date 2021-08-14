@@ -1,0 +1,145 @@
+/* ## Colors */
+
+:root {
+  /* ### Primary */
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+
+  /* ### Neutral */
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+}
+
+.product {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--Paleblue);
+}
+
+.product-container {
+  max-width: 360px;
+  box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+}
+
+.product__hero {
+  height: 175px;
+}
+
+.product__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em 1em 0 0;
+}
+
+.product__info {
+  padding: 2em 1.5em;
+  background-color: var(--Verypaleblue);
+  border-radius: 0 0 1em 1em;
+}
+
+.product__content {
+  margin-bottom: 2em;
+  text-align: center;
+  padding: 0 1.5em;
+}
+
+.product__content .product__heading {
+  color: var(--Darkblue);
+  font-weight: 900;
+  padding-bottom: 0.5em;
+}
+
+.product__content .product__sub {
+  color: var(--Desaturatedblue);
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.product__plan {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding: 1em;
+  background-color: hsl(225, 70%, 96%);
+  border-radius: 1em;
+  margin-bottom: 1.6em;
+}
+
+.product__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.product__detail {
+  margin-right: 45px;
+}
+
+.product__title {
+  color: var(--Darkblue);
+  font-weight: 900;
+}
+
+.product__description {
+  color: var(--Desaturatedblue);
+  font-weight: 500;
+}
+
+.btn-change {
+  font-weight: 900;
+  color: var(--Brightblue);
+}
+
+.btn-change:hover {
+  color: hsl(245, 50%, 52%);
+  text-decoration: none;
+}
+
+.btn-payment {
+  display: block;
+  padding: 1em 2.5em;
+  background-color: var(--Brightblue);
+  color: var(--Verypaleblue);
+  box-shadow: 0 3px 10px hsl(245, 25%, 52%);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 1em;
+  margin-bottom: 1.5em;
+}
+
+.btn-payment:hover {
+  background-color: hsl(245, 50%, 52%);
+}
+
+.btn-cancel {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: var(--Desaturatedblue);
+  font-weight: 900;
+}
+
+.btn-cancel:hover {
+  color: var(--Darkblue);
+}
